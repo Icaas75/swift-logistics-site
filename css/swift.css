@@ -10,7 +10,7 @@ body {
 }
 header {
     position: relative;
-    height: 87vh;
+    height: 72vh;
     width: 100%;
     background-image: url('/images/backgroung.jpeg');
     background-size: cover;
@@ -56,7 +56,7 @@ header {
     height: auto;
     position: absolute;
     right: 4vw;
-    bottom: 25vh;
+    bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,4 +94,104 @@ header {
     width: fit-content;
     color: white;
     text-decoration: none;
+}
+.core_summary {
+    background: transparent;
+    margin: 6vh auto;
+    height: auto;
+    width: 95vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    gap: 7px;
+}
+.home_services {
+    border-radius: 30px;
+    background-color: white;
+    height: auto;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.home_services img {
+    border-radius: 30px;
+    height: 20vh;
+    width: 12vw;
+}
+.name_service {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+.home_services p {
+    width: 20rem;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.we_are {
+    color: #ff914d;
+    font-size: 2.5rem;
+    margin: 7vh auto;
+    text-align: center;
+}
+.we_are_p {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 65%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.we_highlight {
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background: url('/images/backgroundwarehouse.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+.we_cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+}
+.we_highlight_content {
+    z-index: 1;
+    border-radius: 10px;
+    border: 2.5px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    height: 31vh;
+}
+.we_highlight_content img {
+    margin: 20px auto;
+    background-color: white;
+    background: transparent;
+    height: 80px;
+    height: 80px;
+}
+.we_highlight_described {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6px;
+}
+.yellowed {
+    font-size: 4rem;
+    color: gold;
 }
