@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    position: relative;
+    height: 87vh;
+    width: 100%;
+    background-image: url('/images/backgroung.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.topper {
+    height: 11vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, black, 75%,  transparent);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    padding-left: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.nav-list {
+    margin-right: 9vw;
+    list-style: none;
+    display: flex;
+    gap: 4.5vw;
+}
+.nav-list li {
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover {
+    color: #ff6347;
+    text-decoration: none;
+    color: white;
+}
+.title {
+    height: auto;
+    position: absolute;
+    right: 4vw;
+    bottom: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name {
+    color: white;
+    font-size: 39px;
+    font-weight: bold;
+}
+.intitle {
+    height: 4px;
+    width: 200px;
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+.tagline {
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 5vh;
+
+}
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ctagp {
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 9px;
+    height: 35px;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+}
