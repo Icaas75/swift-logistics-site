@@ -33,10 +33,10 @@ header {
     color: white;
 }
 .nav-list {
-    margin-right: 9vw;
+    margin-right: 6vw;
     list-style: none;
     display: flex;
-    gap: 4.5vw;
+    gap: 5vw;
 }
 .nav-list li {
     font-size: 18px;
@@ -94,6 +94,11 @@ header {
     width: fit-content;
     color: white;
     text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+#quote:hover {
+    background-color: #ff914d;
+    color: white;
 }
 .core_summary {
     background: transparent;
@@ -115,7 +120,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 6px 0px rgb(255, 145, 0);
 }
 .home_services img {
     border-radius: 30px;
@@ -145,7 +150,7 @@ header {
 .we_are_p {
     color: #333;
     font-size: 1.2rem;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 65%;
     text-align: center;
     letter-spacing: 1px;
@@ -194,4 +199,196 @@ header {
 .yellowed {
     font-size: 4rem;
     color: gold;
+}
+.why_swift {
+    margin: 8vh 0;
+    height: 50vh;
+    width: 100%;
+    background: url(/images/why_swift.png) no-repeat;
+    background-position: center;
+}
+.why_choose {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10vw;
+    margin-top: 4vh;
+}
+.why_swift_title{
+    width: 28vw;
+    color: black;
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: bold;
+}
+.why_choose_para {
+    margin-left: 1.5vw;
+    color: #ff6347;
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 1.1em;
+    width: 44vw;
+}
+.why_reasons {
+    list-style: none;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.why_reasons li {
+    font-size: 1.2rem;
+    list-style-image: url();
+}
+ion-icon {
+    font-size: 1.6rem;
+    color: #ff914d;
+}
+.more {
+    background-color: #ff914d;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.request {
+    margin: 5vh ;
+    width: 37vw;
+    height: auto;
+    border: 3px solid white;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.request_title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2.5px solid white;
+}
+.request_para {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: white;
+}
+.request form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.request form input {
+    display: block;
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+}
+.request form textarea {
+    display: block;
+    width: 75%;
+    height: 70px;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+}
+.request form button {
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px ;
+    width: 60%;
+}
+footer {
+    background-color: #333;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding: 18px;
+    margin-top: 8px;
+    width: 82vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6vw;
+}
+.logo_footer {
+    width: 25vw;
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    padding: 3px;
+}
+.footer {
+    width: 60vw;
+    margin-left: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot_nav {
+    width: 15vw;
+    list-style: none;
+    gap: 5vw;
+    margin-left: 20px;
+}
+.social_medias {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 2.3rem;
+}
+.foot_nav li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.foot_nav li a {
+    text-decoration: none;
+    color: white;
+}
+.company {
+    width: 41vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.copyright {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 1.05rem;
 }
