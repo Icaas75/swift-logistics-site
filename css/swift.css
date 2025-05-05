@@ -44,13 +44,17 @@ header {
     transition: all 0.3s ease-in-out;
 }
 .nav-list li a {
+    font-weight: bold;
     text-decoration: none;
     color: white;
 }
-.nav-list li a:hover {
+.nav-list li:hover {
     color: #ff6347;
     text-decoration: none;
     color: white;
+}
+header ion-icon {
+    display: none;
 }
 .title {
     height: auto;
@@ -120,7 +124,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 5px 6px 0px rgb(255, 145, 0);
+    box-shadow: 1.5px 2.5px 6px 0px rgb(255, 145, 0);
 }
 .home_services img {
     border-radius: 30px;
@@ -144,7 +148,6 @@ header {
 .we_are {
     color: #ff914d;
     font-size: 2.5rem;
-    margin: 7vh auto;
     text-align: center;
 }
 .we_are_p {
@@ -184,7 +187,6 @@ header {
 }
 .we_highlight_content img {
     margin: 20px auto;
-    background-color: white;
     background: transparent;
     height: 80px;
     height: 80px;
@@ -216,7 +218,6 @@ header {
 }
 .why_swift_title{
     width: 28vw;
-    color: black;
     font-size: 1.9rem;
     text-align: center;
     font-weight: bold;
@@ -255,17 +256,17 @@ ion-icon {
     align-items: center;
 }
 .request {
-    margin: 5vh ;
+    margin: 5vh;
     width: 37vw;
     height: auto;
     border: 3px solid white;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
 }
 .request_title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -377,11 +378,16 @@ footer {
     color: white;
 }
 .company {
-    width: 41vw;
+    width: 43vw;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.company ion-icon {
+    margin: 2px 6px;
+    font-size: 1.2rem;
+    color: #ff914d;
 }
 .copyright {
     background-color: black;
@@ -391,4 +397,240 @@ footer {
     color: white;
     padding: 5px;
     font-size: 1.05rem;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        height: 60vh;
+    }
+    .topper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 26px;
+    }
+    .nav-list {
+        background-color: #333;
+        width: 30vw;
+        position: absolute;
+        top: 0;
+        right: -30vw;
+        margin: 0;
+        flex-direction: column;
+        gap: 5vw;
+        transition: all 0.15s ease-in-out;
+    }
+    .nav-list :first-child {
+        margin-top: 36px;
+    }
+    .nav-list li {
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .nav-list li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    .nav-list li:hover {
+        color: #ff6347;
+        text-decoration: none;
+        color: white;
+    }
+    header ion-icon {
+
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 8px;
+        font-size: 25px;
+    }
+    .title {
+        width: 100%;
+        left: 1px;
+        bottom: 2vh;
+    }
+    .name {
+        font-size: 27px;
+    }
+    .tagline {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 2vh;
+    }
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .ctagp {
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 5px 9px;
+        height: 35px;
+        width: fit-content;
+        color: white;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+    }
+    .core_summary {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .home_services {
+        border-radius: 10px;
+        width: 82vw;
+        flex-direction: column;
+    }
+    .home_services img {
+        border-radius: 30px;
+        height: 20vh;
+        width: 46vw;
+    }
+    .name_service {
+        text-align: center;
+        font-size: 24px;
+        margin-top: -8px;
+    }
+    .home_services p {
+        width: 20rem;
+        font-size: 16px;
+        color: #666;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+    .we_are {
+        font-size: 2rem;
+    }
+    .we_are_p {
+        text-align: justify;
+        font-size: 1rem;
+        margin: 8px auto;
+        width: 90%;
+        letter-spacing: normal;
+    }
+    .we_highlight {
+        height: 45vh;
+        justify-content: space-evenly;
+        gap: 6px;
+    }
+    .we_highlight_content {
+        width: 31vw;
+        height: auto;
+    }
+    .we_highlight_content img {
+        margin: 8px auto;
+        background: transparent;
+        height: 55px;
+        height: 55px;
+    }
+    .we_highlight_described {
+        font-size: 1rem;
+        margin-top: 3px;
+    }
+    .yellowed {
+        font-size: 2.6rem;
+        color: gold;
+    }
+    .why_swift {
+        height: auto;
+    }
+    .why_choose {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1vw;
+        margin-top: 5px;
+    }
+    .why_choose_para {
+        margin-left: 3px;
+        margin-top: 4vh;
+        font-size: 0.9em;
+        width: 96%;
+        text-align: justify;
+    }
+    .why_swift_title{
+        margin-left: 28px;
+        width: 85vw;
+        font-size: 1.4rem;
+    }
+    .why_reasons {
+        margin-right: 6vw;
+        gap: 2px;
+    }
+    .why_reasons li {
+        font-size: 1.2rem;
+        list-style-image: url();
+    }
+    ion-icon {
+        font-size: 1.6rem;
+        color: #ff914d;
+    }
+    .more {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .request {
+        margin: 2.5vw 2vw ;
+        width: 92%;
+        padding: 4px;
+    }
+    .request_title {
+        width: 74%;
+        text-align: center;
+        border-bottom: 2.5px solid white;
+    }
+    .request_para {
+        width: 95%;
+        font-size: 1.02rem;
+    }
+    .request form textarea {
+        width: 80%;
+        height: 60px;
+    }
+    .request form input {
+        width: 62%;
+        height: 33px;
+    }
+    .request form button {
+        padding: 7px 15px;
+        width: 75%;
+    }
+    .container {
+        padding: 10px;
+        justify-content: center;
+        gap: 1.5vh;
+        flex-wrap: wrap;
+    }
+    .logo_footer {
+        letter-spacing: 1px;
+        text-align: center;
+        width: auto;
+    }
+    .foot_nav {
+        width: 65vw;
+    }
+    .foot_nav li a {
+        font-size: 15px;
+    }
+    .company {
+        width: 80vw;
+        gap: 4px;
+    }
+    .copyright {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: white;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
 }
