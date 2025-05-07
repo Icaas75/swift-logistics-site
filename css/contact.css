@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #F7F9FB;
+}
+header {
+    background-color: #0A4D68;
+    height: 15vh;
+    width: 100%;
+}
+.sls {
+    padding-top: 10px;
+    margin-left: 24px;
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.nav-list {
+    position: absolute;
+    top: 5vh;
+    right: 30px;
+    margin-right: 6vw;
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.header {
+    background-color: #e4f4fa;
+    height: 45vh;
+    width: 100%;
+}
+.header h2 {
+    color: #0A4D68;
+    margin: 14vh auto 0;
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 10px 7px 0;
+}
+.header p {
+    margin: auto;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 7px ;
+}
+.contact {
+    background-color: #fffaf3;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.touch {
+    border-right: 2.5px solid black;
+    width: 45%;
+}
+.touch >h3 {
+    font-size: 2rem;
+}
+.touch > p {
+    margin: 0 0 15px;
+}
+.touch label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 10px 5px;
+}
+.touch input {
+    width: 50%;
+    padding: 10px;
+    margin: 0 10px 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 7px;
+}
+.touch textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 0 10px 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 7px;
+}
+.touch button {
+    width: 60%;
+    margin: 0 10px 15px;
+    background-color: #0A4D68;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.location {
+    width: 45%;
+}
+.location img {
+    width: 23vw;
+    height: 28vh;
+    border-radius: 10px;
+    margin: 0px 4vw;
+}
+.location h4 {
+    font-size: 1.6rem;
+    margin-left: 2.5vw;
+}
+.location p {
+    margin-left: 2.9vw;
+    font-size: 1rem;
+}
+.location h3 {
+    font-size: 1.29rem;
+    margin: 2vh 3vw;
+}
+.location ul {
+    margin: 0 2.9vw;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.location ion-icon {
+    font-size: 1.6rem;
+    color: #0A4D68;
+}
+footer {
+    background-color: #333;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding: 18px;
+    margin-top: 8px;
+    width: 82vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6vw;
+}
+.logo_footer {
+    width: 25vw;
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    padding: 3px;
+}
+.footer {
+    width: 60vw;
+    margin-left: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot_nav {
+    width: 15vw;
+    list-style: none;
+    gap: 5vw;
+    margin-left: 20px;
+}
+.social_medias {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 2.3rem;
+}
+.foot_nav li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.foot_nav li a {
+    text-decoration: none;
+    color: white;
+}
+.company {
+    width: 43vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social_medias ion-icon {
+    margin: 2px 6px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.copyright {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 1.05rem;
+}
