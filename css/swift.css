@@ -12,7 +12,7 @@ header {
     position: relative;
     height: 72vh;
     width: 100%;
-    background-image: url('/images/backgroung.jpeg');
+    background-image: url('https://kailogistics.com/wp-content/uploads/2023/02/1124.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,7 +165,7 @@ header ion-icon {
     position: relative;
     height: 45vh;
     width: 100%;
-    background: url('/images/backgroundwarehouse.png') no-repeat center center;
+    background: url('https://www.freeiconspng.com/uploads/warehouse-inventory-png-17.png');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -209,7 +209,7 @@ header ion-icon {
     margin: 8vh 0;
     height: 50vh;
     width: 100%;
-    background: url(/images/why_swift.png) no-repeat;
+    background: url('https://www.logos3pl.com/wp-content/uploads/2024/08/logos-logistics-3pl-warehouse-locations-1024x683.png') no-repeat;
     background-position: center;
 }
 .why_choose {
@@ -521,7 +521,7 @@ footer {
         letter-spacing: normal;
     }
     .we_highlight {
-        height: 45vh;
+        height: 32vh;
         justify-content: space-evenly;
         gap: 6px;
     }

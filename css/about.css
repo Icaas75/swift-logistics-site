@@ -90,12 +90,14 @@ header ion-icon {
     padding: 12px 4px;
 }
 .history {
+    background-color: #E0E0E0;
     width: 80%;
     margin: 5vh auto;
+    padding: 15px;
 }
 .previous {
     margin-left: 2vw;
-    padding: 10px 15px;
+    padding: 0 15px;
     font-size: 31px;
     color: #0A4D68;
     width: fit-content;
@@ -113,12 +115,7 @@ header ion-icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 28vw;
-}
-.year img {
-    margin-top: 10px;
-    height: 140px;
-    width: 60%;
+    width: 23vw;
 }
 .year h4 {
     margin-top: 5px;
@@ -126,7 +123,7 @@ header ion-icon {
     color: white;
 }
 .year p {
-    width: 75%;
+    width: 85%;
     text-align: center;
     color: white;
 }
