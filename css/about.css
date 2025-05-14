@@ -4,23 +4,30 @@
     box-sizing: border-box;
 }
 body {
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
-.topper {
-    background-color: #0A4D68;
-    height: 11vh;
+header {
+    position: relative;
+    background-image: url(https://t4.ftcdn.net/jpg/07/04/94/87/360_F_704948749_k81GKdYatC8PP1Z0Bnsf1gGDT7H3QgM4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh;
     width: 100%;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.logo {
-    padding-left: 16px;
-    font-size: 28px;
+#shade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #053346;
+    opacity: 0.8;
+}
+.sls {
+    position: absolute;
+    left: 15px;
+    color: white;
+    font-size: 2.1rem;
     font-weight: bold;
-    color: whitesmoke;
 }
 .nav-list {
     position: absolute;
@@ -31,63 +38,88 @@ body {
     display: flex;
     gap: 5vw;
 }
-.nav-list li {
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-.nav-list li a {
+.nav-list li a{
+    text-decoration: none;
+    color: white;
     font-weight: bold;
-    text-decoration: none;
-    color: #FFFFFF;
 }
-.nav-list li:hover {
-    color: #ff6347;
-    text-decoration: none;
+.title {
+    position: absolute;
+    font-size: 2.5rem;
     color: white;
+    margin: 20vh 4vw 0;
 }
-header ion-icon {
-    display: none;
-}
-.about {
-    background-color: #0A4D68;
-    width: 100%;
-    height: 30vh;
-}
-.header {
-    text-align: center;
-    font-size: 68px;
+.tagline {
+    position: absolute;
+    z-index: 2;
     color: white;
-    padding-top: 5vh;
+    margin: 10px 4vw;
+    margin: 36vh 4vw 0;
 }
 .mvv {
     height: auto;
-    width: 85%;
+    width: 65%;
     margin: 5vh auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.header {
+    width: 100%;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    color: #0A4D68;
 }
 .mission {
-    border: 2px solid black;
+    background-color: rgb(204, 230, 255);
     border-radius: 10px;
-    box-shadow: 0 6px 5px 7px rgba(4, 0, 240, 0.2);
-    width: 24vw;
+    box-shadow: 0 2px 3px 3px rgba(4, 0, 240, 0.2);
+    width: 29vw;
+    height: 27vh;
     text-align: center;
 }
 .vision {
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 15px 0 5px;
     text-align: center;
     width: 70%;
     font-size: 25px;
-    border-bottom: 4px solid black;
 }
 .value {
     margin: 0 auto;
     text-align: center;
     width: 85%;
     padding: 12px 4px;
+}
+.valuediv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 7px;
+}
+.value_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 12vh;
+}
+.value_item ion-icon {
+    font-weight: bold;
+    font-size: 2.2rem;
+    background-color: #ff914d;
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+.value_item h5 {
+    text-align: center;
+    font-size: 1rem;
+    color: #0A4D68;
 }
 .history {
     background-color: #E0E0E0;
@@ -210,4 +242,150 @@ footer {
     color: white;
     padding: 5px;
     font-size: 1.05rem;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    #shade {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #053346;
+        opacity: 0.8;
+    }
+    .sls {
+        left: 10px;
+        top: 5px;
+        font-size: 1.6rem;
+    }
+    .nav-list {
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: rgb(51, 50, 50);
+        width: 30vw;
+        height: 55vh;
+        margin-right: 0;
+        flex-direction: column;
+        gap: 5vw;
+        transition: 0.3s all ease-in-out;
+        margin-right: 0;
+    }
+    .nav-list li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    .nav-list :first-child {
+        margin-top: 7vh;
+    }
+    .menu {
+        z-index: 3;
+        display: block;
+        color: white;
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        font-size: 27px;
+    }
+    .title {
+        content: 'DRIVEN BY PRECISION,POWERED BY PEOPLE';
+        font-size: 1.7rem;
+        color: white;
+        margin: 21vh 0 0 4vw;
+    }
+    .tagline {
+        z-index: 1;
+        color: white;
+        margin: 38vh 4vw 0;
+        font-size: 0.93rem;
+    }
+    .mvv {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .header {
+        text-align: center;
+        margin-left: 10px;
+        font-size: 1.7rem;
+    }
+    .mission {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    .vision {
+        padding: 15px 0 5px;
+    }
+    .value {
+        text-align: center;
+    }
+    .valuediv {
+        margin-top: 3vh;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .value_item {
+        width: 20vw;
+    }
+    .history {
+        width: 90%;
+    }   
+    .previous {
+        padding: 0 15px;
+        font-size: 31px;
+        color: #0A4D68;
+        width: fit-content;
+    }
+    .chronology {
+        flex-direction: column;
+        gap: 2vh;
+        margin-top: 3vh;
+    }
+    .year {
+        border-radius: 5px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .year h4 {
+        margin-top: 5px;
+        font-size: 26px;
+        color: #ff914d;
+        margin: 1.6vh;
+    }
+    .chronology ion-icon {
+        display: none;
+    }
+    .container {
+        padding: 10px;
+        justify-content: center;
+        gap: 1.5vh;
+        flex-wrap: wrap;
+    }
+    .logo_footer {
+        letter-spacing: 1px;
+        text-align: center;
+        width: auto;
+    }
+    .foot_nav {
+        width: 65vw;
+    }
+    .foot_nav li a {
+        font-size: 15px;
+    }
+    .company {
+        width: 80vw;
+        gap: 4px;
+    }
+    .copyright {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: white;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
 }

@@ -411,11 +411,14 @@ footer {
         align-items: center;
     }
     .logo {
-        font-size: 26px;
+        padding-left: 13px;
+        font-size: 23px;
+        margin-top: -11px;
     }
     .nav-list {
         background-color: #333;
         width: 30vw;
+        height: 38vh;
         position: absolute;
         top: 0;
         right: -30vw;
