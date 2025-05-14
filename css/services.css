@@ -13,6 +13,9 @@ header {
     height: 55vh;
     width: 100%;
 }
+.menu {
+    display: none;
+}
 .sls {
     margin-left: 15px;
     color: white;
