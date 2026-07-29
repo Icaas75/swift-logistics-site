@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* ============================================
+   Custom Theme
+   ============================================ */
+@theme {
+  --color-primary: #0A192F;
+  --color-primary-light: #112240;
+  --color-primary-dark: #060F1E;
+  --color-accent: #FF6B35;
+  --color-accent-light: #FF8C5A;
+  --color-accent-dark: #E55A2B;
+  --color-secondary: #00B4D8;
+  --color-secondary-light: #48CAE4;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* ============================================
+   Dark Mode (class-based, not prefers-color-scheme)
+   ============================================ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================
+   Base Styles
+   ============================================ */
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: #1a1a2e;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #FF6B35, #00B4D8);
+  border-radius: 10px;
+}
+
+/* Font display swap for performance */
+html { font-display: swap; }
+
+/* Scroll indicator animation */
+@keyframes scrollDown {
+  0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(15px); }
+}
+
+/* Hide scrollbar for testimonial track */
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
