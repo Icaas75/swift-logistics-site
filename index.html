@@ -1,137 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftLogistcs Solutions</title>
-    <link rel="stylesheet" type="text/css" href="./css/swift.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift Logistics Solutions - Global Freight & Supply Chain</title>
+  <meta name="description" content="Swift Logistics Solutions - Your partner in efficient freight shipping, warehousing, and supply chain management.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=.9em font-size=90>🚚</text></svg>">
 </head>
 <body>
+  <noscript><div class="noscript-warning">JavaScript is disabled. Some features may not work.</div></noscript>
+  <nav class="navbar" role="navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">SLS <span class="logo-dot"></span></a>
+      <div class="navbar-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <span class="toggle-icon active" data-theme="light">☀️</span>
+          <span class="toggle-icon" data-theme="dark">🌙</span>
+        </button>
+      </div>
+      <button class="mobile-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <header>
-        <div class="topper">
-            <h1 class="logo">SLS</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="index.html" style="border-bottom: 2px solid white;">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </nav>
-            <ion-icon name="menu" onclick="show()"></ion-icon>
-        </div>
-        <div class="title">
-            <h2 class="name">Swift Logistics Solution</h2>
-            <span class="intitle"></span>
-            <p class="tagline">Your Partner in Efficient Logistic</p>
-            <span class="cta">
-                <a href="" class="ctagp" id="quote" style="background-color: white; color: black;">Get a Quote</a>
-                <a href="#track" class="ctagp" id="shipment" style="background-color: #ff914d;">Track Your Shipment</a>
-            </span>
-        </div>
-    </header>
-    <div class="core_summary">
-        <span class="home_services">
-            <img src="https://png.pngtree.com/png-vector/20191129/ourmid/pngtree-fast-delivery-icon-delivery-icon-png-image_2047531.jpg" alt="">
-            <h3 class="name_service">Freight Shipping</h3>
-            <p class="describe">Domestic & international shipping solutions tailored to your timelines.</p>
-        </span>
-        <span class="home_services">
-            <img src="https://www.constructionweekonline.in/cloud/2023/08/07/3pl-warehouse-logistings.jpg" alt="">
-            <h3 class="name_service">Warehousing Solutions </h3>
-            <p class="describe">Safe, scalable storage with real-time inventory tracking.</p>
-        </span>
-        <span class="home_services">
-            <img src="https://static.vecteezy.com/system/resources/previews/035/193/577/non_2x/circular-supply-chain-icon-line-illustration-vector.jpg" alt="">
-            <h3 class="name_service">Supply Chain Management</h3>
-            <p class="describe">Optimize every step of your logistics process with expert consulting.</p>
-        </span>
+  <section class="hero" id="home">
+    <div class="hero-bg"><canvas id="particles-canvas" aria-hidden="true" role="presentation"></canvas></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Trusted Global Logistics Partner
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Your Partner in<br><span class="gradient-text">Efficient Logistics</span>
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-2">
+        End-to-end freight, warehousing, and supply chain solutions powered by technology and driven by people who care.
+      </p>
+      <div class="hero-cta reveal reveal-delay-3">
+        <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+        <a href="services.html" class="btn btn-outline-light">Explore Services</a>
+      </div>
+      <div class="hero-stats reveal reveal-delay-4">
+        <div><div class="hero-stat-value" data-count="15" data-suffix="+">0+</div><div class="hero-stat-label">Years Experience</div></div>
+        <div><div class="hero-stat-value" data-count="500" data-suffix="K">0K+</div><div class="hero-stat-label">Shipments Delivered</div></div>
+        <div><div class="hero-stat-value" data-count="99" data-suffix="%">0%</div><div class="hero-stat-label">On-Time Rate</div></div>
+        <div><div class="hero-stat-value" data-count="50" data-suffix="+">0+</div><div class="hero-stat-label">Global Partners</div></div>
+      </div>
     </div>
-    <h3 class="we_are">Who We Are</h3>
-    <p class="we_are_p">
-        Swift Logistics Solution is a leading provider of comprehensive logistics and supply chain solutions. With a commitment to excellence, we offer tailored services that meet the unique needs of our clients. Our team of experts leverages advanced technology and industry best practices to ensure efficient and reliable transportation, warehousing, and distribution services. Whether you're a small business or a large corporation, we are dedicated to helping you streamline your operations and achieve your logistics goals.
-    </p>
-    <div class="we_highlight">
-        <span class="we_cover"></span>
-        <span class="we_highlight_content">
-            <p class="we_highlight_described yellowed">10<sup>+</sup><br></p>
-            <p class="we_highlight_described">years of experience</p>
-        </span>
-        <span class="we_highlight_content">
-            <img src="/images/network.png" alt="">
-            <p class="we_highlight_described">Global logistics network</p>
-        </span>
-        <span class="we_highlight_content">
-            <img src="/images/client.png" alt="">
-            <p class="we_highlight_described">Client-focused operations</p>
-        </span>
-    </div>
-    
-    <div class="why_swift">
-        <div class="why_choose">
-            <p class="why_choose_para">
-                At Swift Logistics Solution, our mission i to deliver fast, reliable, and cost-effective logistics solutions. We understand that every business is unique, which is why we offer customized services to meet your specific needs. Our team of experts is dedicated to providing exceptional customer service and support, ensuring that your shipments are handled with care and precision. With our state-of-the-art technology and extensive network, we can help you streamline your supply chain and improve your bottom line.
-            </p>
-            <ul class="why_reasons">
-                <h3 class="why_swift_title">Why Choose Swift Logistics Solution?</h3>
-                <span>
-                    <li><ion-icon name="checkmark-sharp"></ion-icon> &nbsp; 24/7 Support</li>
-                    <li><ion-icon name="checkmark-sharp"></ion-icon> &nbsp; Real_Time Tracking</li>
-                    <li><ion-icon name="checkmark-sharp"></ion-icon> &nbsp; Customized Solutions</li>
-                    <li><ion-icon name="checkmark-sharp"></ion-icon> &nbsp; Compitative Rates</li>
-                </span>
-            </ul>
-        </div>
-    </div>
-    <div class="more">
-        <div class="request">
-            <h3 class="request_title">Request a Quote</h3>
-            <p class="request_para">Fill out the form below to get a personalized quote for your logistics needs.</p>
-            <form action="" method="post" class="request_form">
-                <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="phone" placeholder="Your Phone Number" required>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="request" id="track">
-            <h3 class="request_title">Track Your Shipment</h3>
-            <p class="request_para">Enter your tracking number below to find the status of your shipment.</p>
-            <form action="" method="post" class="track_form">
-                <input type="text" name="tracking_number" placeholder="Tracking Number" required>
-                <button type="submit">Track</button>
-            </form>
-        </div>
-    </div>
-    <footer>
-        <section class="container">
-            <h3 class="logo_footer">Swift Logistics<br>Solutions</h3>
-                <ul class="foot_nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-                <ul class="social_medias">
-                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-skype"></ion-icon></a></li>
-                </ul>
-                <section class="company">
-                    <p><ion-icon name="call-outline"></ion-icon> (123) 456-7890</p>
-                    <p><ion-icon name="mail"></ion-icon> info@swiftlogistics.com</p>
-                    <p><ion-icon name="location-sharp"></ion-icon> 123 Warehouse Blvd, Logistics City, LC 45678</p>
-                </section>
-        </section>
-        <p class="copyright">© 2025 Swift Logistics Solutions. All Rights Reserved.</p>
+    <div class="scroll-indicator"><span>Scroll</span><div class="mouse"></div></div>
+  </section>
 
-    </footer>
-    <script src="./javascript/swift.js"></script>
-    
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <section class="section" id="services">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Core Logistics Services</h2>
+        <p class="section-subtitle">Comprehensive solutions tailored to move your business forward from warehouse to worldwide.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><span class="icon-bg">🚢</span></div>
+          <h3>Freight Forwarding</h3>
+          <p>Air, sea, and land freight solutions with real-time tracking, customs documentation, and guaranteed timelines.</p>
+          <span class="service-link">Learn more →</span>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><span class="icon-bg">🏭</span></div>
+          <h3>Warehousing and Distribution</h3>
+          <p>Secure, scalable storage with intelligent inventory management, pick-and-pack, and last-mile distribution.</p>
+          <span class="service-link">Learn more →</span>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><span class="icon-bg">🔗</span></div>
+          <h3>Supply Chain Management</h3>
+          <p>End-to-end visibility and optimization from procurement to delivery, powered by data and expertise.</p>
+          <span class="service-link">Learn more →</span>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><span class="icon-bg">📋</span></div>
+          <h3>Customs Clearance</h3>
+          <p>Hassle-free customs brokerage with expert documentation, compliance checks, and fast-track processing.</p>
+          <span class="service-link">Learn more →</span>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><span class="icon-bg">📦</span></div>
+          <h3>E-Commerce Logistics</h3>
+          <p>Specialized fulfillment for online retailers same-day pickup, smart packaging, and global delivery networks.</p>
+          <span class="service-link">Learn more →</span>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><span class="icon-bg">📍</span></div>
+          <h3>Real-Time Tracking</h3>
+          <p>Complete visibility across your supply chain with GPS tracking, predictive ETAs, and instant alerts.</p>
+          <span class="service-link">Learn more →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding:0;">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item reveal"><div class="stat-number" data-count="25000" data-suffix="K">0</div><div class="stat-label">Packages Delivered</div></div>
+        <div class="stat-item reveal reveal-delay-1"><div class="stat-number" data-count="150" data-suffix="+">0</div><div class="stat-label">Fleet Vehicles</div></div>
+        <div class="stat-item reveal reveal-delay-2"><div class="stat-number" data-count="98" data-suffix="%">0</div><div class="stat-label">Satisfaction Rate</div></div>
+        <div class="stat-item reveal reveal-delay-3"><div class="stat-number" data-count="30" data-suffix="+">0</div><div class="stat-label">Countries Covered</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Modern logistics warehouse" loading="lazy">
+          </div>
+          <div class="about-experience-badge"><span class="number">15+</span><span class="label">Years of Excellence</span></div>
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <span class="section-label">Who We Are</span>
+          <h2>Driven by Precision,<br>Powered by People</h2>
+          <p>Swift Logistics Solutions is a leading provider of comprehensive logistics and supply chain services. Since 2010, we have helped businesses of all sizes streamline operations, reduce costs, and deliver exceptional experiences to their customers.</p>
+          <p>Our team combines deep industry expertise with cutting-edge technology to create logistics solutions that just work every time, every mile.</p>
+          <div class="about-features">
+            <div class="about-feature reveal"><span class="feature-icon">✓</span> 24/7 Customer Support</div>
+            <div class="about-feature reveal reveal-delay-1"><span class="feature-icon">✓</span> Real-Time Tracking</div>
+            <div class="about-feature reveal reveal-delay-2"><span class="feature-icon">✓</span> Customized Solutions</div>
+            <div class="about-feature reveal reveal-delay-3"><span class="feature-icon">✓</span> Competitive Rates</div>
+          </div>
+          <a href="about.html" class="btn btn-primary" style="margin-top:32px;">Learn Our Story →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Why Swift</span>
+        <h2 class="section-title">What Sets Us Apart</h2>
+        <p class="section-subtitle" style="margin:0 auto;">We do not just move goods we move your business forward with reliability, transparency, and care.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal reveal-delay-1"><div class="why-icon">🌐</div><h4>Global Network</h4><p>Strategic partnerships across 30+ countries ensure seamless international shipping.</p></div>
+        <div class="why-item reveal reveal-delay-2"><div class="why-icon">⚡</div><h4>Fast and Reliable</h4><p>99% on-time delivery rate with real-time tracking and proactive updates.</p></div>
+        <div class="why-item reveal reveal-delay-3"><div class="why-icon">🔒</div><h4>Secure Handling</h4><p>Insurance-backed shipping with GPS-monitored fleet and secure warehousing.</p></div>
+        <div class="why-item reveal reveal-delay-1"><div class="why-icon">💡</div><h4>Smart Technology</h4><p>AI-powered route optimization, predictive analytics, and automated inventory systems.</p></div>
+        <div class="why-item reveal reveal-delay-2"><div class="why-icon">🤝</div><h4>Dedicated Support</h4><p>Personal account managers available 24/7 to handle your logistics needs.</p></div>
+        <div class="why-item reveal reveal-delay-3"><div class="why-icon">💰</div><h4>Cost-Effective</h4><p>Optimized routes and consolidated shipments that save you up to 30% on logistics costs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Trusted by businesses worldwide to deliver excellence.</p>
+      </div>
+      <div class="testimonials-track">
+        <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">Swift Logistics transformed our supply chain. Their real-time tracking and dedicated support have been game-changing for our e-commerce business.</p><div class="testimonial-author"><div class="testimonial-avatar">SK</div><div><div class="testimonial-name">Sarah K.</div><div class="testimonial-role">CEO, GreenLeaf Commerce</div></div></div></div>
+        <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">We have been partnering with Swift for over 5 years. Their reliability, professionalism, and cost-effectiveness are unmatched.</p><div class="testimonial-author"><div class="testimonial-avatar">JM</div><div><div class="testimonial-name">James M.</div><div class="testimonial-role">Supply Chain Director, TechGlobal Inc.</div></div></div></div>
+        <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">The team at Swift went above and beyond during our peak season. They handled a 300% volume surge without a single delay.</p><div class="testimonial-author"><div class="testimonial-avatar">AL</div><div><div class="testimonial-name">Amina L.</div><div class="testimonial-role">Operations Manager, AfroTrade</div></div></div></div>
+        <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">Their customs clearance expertise saved us weeks of delays. I recommend Swift to anyone doing international shipping.</p><div class="testimonial-author"><div class="testimonial-avatar">DR</div><div><div class="testimonial-name">David R.</div><div class="testimonial-role">Founder, GlobalMart</div></div></div></div>
+        <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">The warehouse management system Swift implemented reduced our inventory errors by 95%. Absolutely incredible.</p><div class="testimonial-author"><div class="testimonial-avatar">PW</div><div><div class="testimonial-name">Priya W.</div><div class="testimonial-role">Logistics Lead, FreshFoods Co.</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready to Transform Your Logistics?</h2>
+        <p>Get a personalized quote in under 24 hours. No obligations, just expert advice tailored to your business.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Get a Free Quote →</a>
+          <a href="services.html" class="btn btn-outline-light">View All Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><h3>SLS</h3><p>Swift Logistics Solutions your trusted partner in global freight, warehousing, and supply chain management since 2010.</p></div>
+        <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Freight Forwarding</a></li><li><a href="services.html">Warehousing</a></li><li><a href="services.html">Supply Chain</a></li><li><a href="services.html">Customs Clearance</a></li></ul></div>
+        <div><h4>Contact</h4><ul class="footer-contact"><li><span class="contact-icon">📍</span><span>123 Warehouse Blvd, Logistics City, LC 45678</span></li><li><span class="contact-icon">📞</span><span>(123) 456-7890</span></li><li><span class="contact-icon">✉️</span><span>info@swiftlogistics.com</span></li><li><span class="contact-icon">🕐</span><span>Mon-Fri: 9:00AM - 6:00PM</span></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Swift Logistics Solutions. All rights reserved.</p><div class="footer-socials"><a href="#" aria-label="Facebook">in</a><a href="#" aria-label="Twitter">X</a><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="LinkedIn">in</a></div></div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="./javascript/main.js"></script>
 </body>
 </html>

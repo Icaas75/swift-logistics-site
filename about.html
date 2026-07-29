@@ -1,108 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Swift Logistics Solutions</title>
+  <meta name="description" content="Learn about Swift Logistics Solutions - our mission, vision, values, and history.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <span id="shade"></span>
-        <h2 class="sls">SLS</h2>
-        <ul class="nav-list">
-            <li><a href="swift.html">Home</a></li>
-            <li><a href="about.html" style="border-bottom: 2px solid white;">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-        <ion-icon name="menu" class="menu" onclick="show()"></ion-icon>
-        <h3 class="title">DRIVEN BY PRECISION,<br>POWERED BY PEOPLE</h3>
-        <p class="tagline">Learn more about our mission, values, and the team behind <br>Swift Logistics</p>
-    </header>
-
-    <div class="mvv">
-        <h3 class="header">OUR MISSION, VISSION & VALUES</h3>
-        <div class="mission">
-            <h3 class="vision">Mission</h3>
-            <p class="value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perspiciatis sed necessitatibus, debitis voluptateessitatibus, debitis voluptatem mim minima odit quis libero ratione sequi.</p>
-        </div>
-        <div class="mission">
-            <h3 class="vision">Vision</h3>
-            <p class="value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perspiciatis sed necessitatibus, debitis voluptatem miessitatibus, debitis voluptatem minima odit quis libero ratione sequi.</p>
-        </div>
-        <div class="valuediv">
-            <span class="value_item">
-                <ion-icon name="checkmark-sharp"></ion-icon>
-                <h5>Integrity</h5>
-            </span>
-            <span class="value_item">
-                <ion-icon name="checkmark-sharp"></ion-icon>
-                <h5>On-Time</h5>
-            </span>
-            <span class="value_item">
-                <ion-icon name="checkmark-sharp"></ion-icon>
-                <h5>Innovation</h5>
-            </span>
-            <span class="value_item">
-                <ion-icon name="checkmark-sharp"></ion-icon>
-                <h5>Teamwork</h5>
-            </span>
-            <span class="value_item">
-                <ion-icon name="checkmark-sharp"></ion-icon>
-                <h5>Reliability</h5>
-            </span>
-            <span class="value_item">
-                <ion-icon name="checkmark-sharp"></ion-icon>
-                <h5>Reliability</h5>
-            </span>
-        </div>
+  <nav class="navbar" role="navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">SLS <span class="logo-dot"></span></a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <span class="toggle-icon active" data-theme="light">☀️</span>
+          <span class="toggle-icon" data-theme="dark">🌙</span>
+        </button>
+      </div>
+      <button class="mobile-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="history">
-        <h3 class="previous">Our History</h3>
-        <div class="chronology">
-            <div class="year">
-                <h4>2013</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, illum.</p>
-            </div>
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-            <div class="year">
-                <h4>2017</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab!</p>
-            </div>
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-            <div class="year">
-                <h4>2022</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, deleniti!</p>
-            </div>
-        </div>
+  </nav>
+  <section class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-content">
+      <div class="page-breadcrumb"><a href="index.html">Home</a><span class="separator">/</span><span>About</span></div>
+      <h1>About Swift Logistics</h1>
+      <p>Driven by precision, powered by people - learn our story.</p>
     </div>
-    <footer>
-        <section class="container">
-            <h3 class="logo_footer">Swift Logistics<br>Solutions</h3>
-                <ul class="foot_nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-                <ul class="social_medias">
-                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-skype"></ion-icon></a></li>
-                </ul>
-                <section class="company">
-                    <p><ion-icon name="call-outline"></ion-icon> (123) 456-7890</p>
-                    <p><ion-icon name="mail"></ion-icon> info@swiftlogistics.com</p>
-                    <p><ion-icon name="location-sharp"></ion-icon> 123 Warehouse Blvd, Logistics City, LC 45678</p>
-                </section>
-        </section>
-        <p class="copyright">© 2025 Swift Logistics Solutions. All Rights Reserved.</p>
-
-    </footer>
-    <script src="./javascript/swift.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Modern office" loading="lazy"></div>
+          <div class="about-experience-badge"><span class="number">15+</span><span class="label">Years of Excellence</span></div>
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <span class="section-label">Our Story</span>
+          <h2>Driven by Precision, Powered by People</h2>
+          <p>Founded in 2010, Swift Logistics Solutions started with a simple mission: make logistics faster, smarter, and more reliable for businesses of all sizes. What began as a small freight forwarding operation has grown into a global logistics partner with presence in 30+ countries.</p>
+          <p>Today, we serve over 500 businesses worldwide, handling everything from international freight to complex supply chain management. Our team of 200+ logistics professionals works tirelessly to ensure every shipment arrives on time, every time.</p>
+          <p>We believe in transparency, innovation, and above all else, putting our clients first.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section why-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Mission & Vision</span>
+        <h2 class="section-title">Our Purpose</h2>
+      </div>
+      <div class="about-grid" style="margin-top:32px;">
+        <div class="reveal"><h3 style="color:var(--accent);margin-bottom:12px;">🎯 Our Mission</h3><p style="color:var(--text-secondary);line-height:1.8;">To deliver fast, reliable, and cost-effective logistics solutions that empower businesses to grow. We combine cutting-edge technology with personalized service to create supply chain experiences that exceed expectations.</p></div>
+        <div class="reveal reveal-delay-1"><h3 style="color:var(--accent);margin-bottom:12px;">🔭 Our Vision</h3><p style="color:var(--text-secondary);line-height:1.8;">To be the most trusted logistics partner globally, setting the standard for reliability, innovation, and customer care in every market we serve.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Our Values</span>
+        <h2 class="section-title">What We Stand For</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-item reveal reveal-delay-1"><div class="value-icon">✔️</div><h5>Integrity</h5><p>We do what we say, every time.</p></div>
+        <div class="value-item reveal reveal-delay-2"><div class="value-icon">⏰</div><h5>On-Time</h5><p>Punctuality is our promise.</p></div>
+        <div class="value-item reveal reveal-delay-3"><div class="value-icon">💡</div><h5>Innovation</h5><p>Always improving, always evolving.</p></div>
+        <div class="value-item reveal reveal-delay-1"><div class="value-icon">🤝</div><h5>Teamwork</h5><p>Together we achieve more.</p></div>
+        <div class="value-item reveal reveal-delay-2"><div class="value-icon">💪</div><h5>Reliability</h5><p>Dependable service you can count on.</p></div>
+        <div class="value-item reveal reveal-delay-3"><div class="value-icon">❤️</div><h5>Care</h5><p>Every shipment matters.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="reveal" style="text-align:center;margin-bottom:48px;">
+        <span class="section-label">Our Journey</span>
+        <h2 class="section-title">Company Timeline</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><div class="timeline-content"><div class="timeline-year">2010</div><h4>Founded in Addis Ababa</h4><p>Swift Logistics Solutions was established with a single truck and a vision to transform logistics in Ethiopia.</p></div></div>
+        <div class="timeline-item reveal reveal-delay-1"><div class="timeline-content"><div class="timeline-year">2013</div><h4>Regional Expansion</h4><p>Expanded operations across East Africa, opening offices in Kenya, Uganda, and Tanzania.</p></div></div>
+        <div class="timeline-item reveal reveal-delay-2"><div class="timeline-content"><div class="timeline-year">2017</div><h4>Global Reach</h4><p>Launched international freight services, partnering with global carriers to reach 15+ countries.</p></div></div>
+        <div class="timeline-item reveal reveal-delay-3"><div class="timeline-content"><div class="timeline-year">2022</div><h4>Digital Transformation</h4><p>Implemented AI-powered tracking, automated warehousing, and a client portal for real-time visibility.</p></div></div>
+        <div class="timeline-item reveal reveal-delay-4"><div class="timeline-content"><div class="timeline-year">2025</div><h4>30+ Countries</h4><p>Now serving clients in over 30 countries with a fleet of 150+ vehicles and 200+ team members.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Want to Work With Us?</h2>
+        <p>Let us help you streamline your logistics and grow your business.</p>
+        <div class="cta-buttons"><a href="contact.html" class="btn btn-primary">Get in Touch →</a><a href="services.html" class="btn btn-outline-light">See Our Services</a></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><h3>SLS</h3><p>Swift Logistics Solutions - your trusted partner in global freight, warehousing, and supply chain management since 2010.</p></div>
+        <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Freight Forwarding</a></li><li><a href="services.html">Warehousing</a></li><li><a href="services.html">Supply Chain</a></li><li><a href="services.html">Customs Clearance</a></li></ul></div>
+        <div><h4>Contact</h4><ul class="footer-contact"><li><span class="contact-icon">📍</span><span>123 Warehouse Blvd, Logistics City, LC 45678</span></li><li><span class="contact-icon">📞</span><span>(123) 456-7890</span></li><li><span class="contact-icon">✉️</span><span>info@swiftlogistics.com</span></li><li><span class="contact-icon">🕐</span><span>Mon-Fri: 9:00AM - 6:00PM</span></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Swift Logistics Solutions. All rights reserved.</p><div class="footer-socials"><a href="#" aria-label="Facebook">in</a><a href="#" aria-label="Twitter">X</a><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="LinkedIn">in</a></div></div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="./javascript/main.js"></script>
 </body>
 </html>

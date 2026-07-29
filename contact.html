@@ -1,79 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
-    <link rel="stylesheet" href="./css/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Swift Logistics Solutions</title>
+  <meta name="description" content="Get in touch with Swift Logistics Solutions. Request a quote, ask a question, or learn more about our services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h2 class="sls">SLS</h2>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html" style="border-bottom: 2px solid white;">Contact us</a></li>
-        </ul>
-        <ion-icon name="menu" class="menu" onclick="show()"></ion-icon>
-    </header>
-    <section class="header">
-        <h2>Let's Connect with Swift Logistics</h2>
-        <p>We're here to assist with all your logistics needs.</p>
-    </section>
-    <div class="contact">
-        <div class="touch">
-            <h3>Get in Touch</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptates molestiae? Eveniet eaque architecto sint!
-            </p>
-            <label for="name:">Full Name:</label><br>
-            <input type="text"><br>
-            <label for="email:">Email Address:</label><br>
-            <input type="email"><br>
-            <label for="phone:">Phone Number(Optional):</label><br>
-            <input type="text"><br>
-            <textarea name="message" id="contact"></textarea><br>
-            <button type="submit" class="submit">Send Message</button>
-        </div>
-        <div class="location">
-            <img src="https://plone-handbuch-universitat-bonn.readthedocs.io/en/latest/_images/statik-map.png" alt="">
-            <h4>Office Location</h4>
-            <p>123 Global Trade Bldg <br> Addis Ababa, Ethiopia <br>Phone: +251-xxx-xxx-xxx <br>contact@swiftlogistics.com <br>Mon-Fri: 9:00AM-6:00PM <br>Sat-Sun: Closed</p>
-            <h3>Follow Us</h3>
-            <ul>
-                <li><ion-icon name="logo-facebook"></ion-icon></li>
-                <li><ion-icon name="logo-twitter"></ion-icon></li>
-                <li><ion-icon name="logo-instagram"></ion-icon></li>
-                <li><ion-icon name="logo-linkedin"></ion-icon></li>
-            </ul>
-        </div>
+  <nav class="navbar" role="navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">SLS <span class="logo-dot"></span></a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html" class="active">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="toggle-icon active" data-theme="light">☀️</span><span class="toggle-icon" data-theme="dark">🌙</span></button>
+      </div>
+      <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-    <footer>
-        <section class="container">
-            <h3 class="logo_footer">Swift Logistics<br>Solutions</h3>
-                <ul class="foot_nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-                <ul class="social_medias">
-                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-skype"></ion-icon></a></li>
-                </ul>
-                <section class="company">
-                    <p><ion-icon name="call-outline"></ion-icon> (123) 456-7890</p>
-                    <p><ion-icon name="mail"></ion-icon> info@swiftlogistics.com</p>
-                    <p><ion-icon name="location-sharp"></ion-icon> 123 Warehouse Blvd, Logistics City, LC 45678</p>
-                </section>
-        </section>
-        <p class="copyright">© 2025 Swift Logistics Solutions. All Rights Reserved.</p>
-
-    </footer>
-    <script src="./javascript/swift.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </nav>
+  <section class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-content">
+      <div class="page-breadcrumb"><a href="index.html">Home</a><span class="separator">/</span><span>Contact</span></div>
+      <h1>Get in Touch</h1><p>We are here to help with all your logistics needs.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Have a question or need a quote? Fill out the form and we will get back to you within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form reveal">
+          <form id="contactForm">
+            <div class="form-row"><div class="form-group"><label class="form-label" for="name">Full Name</label><input class="form-input" type="text" id="name" name="name" placeholder="John Smith" required></div><div class="form-group"><label class="form-label" for="email">Email Address</label><input class="form-input" type="email" id="email" name="email" placeholder="john@example.com" required></div></div>
+            <div class="form-row"><div class="form-group"><label class="form-label" for="phone">Phone Number</label><input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 (123) 456-7890"></div><div class="form-group"><label class="form-label" for="subject">Subject</label><input class="form-input" type="text" id="subject" name="subject" placeholder="Quote Request"></div></div>
+            <div class="form-group"><label class="form-label" for="message">Message</label><textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your logistics needs..." required></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+          </form>
+        </div>
+        <div class="contact-info reveal reveal-delay-1">
+          <h3>Contact Information</h3>
+          <p>Reach out through any channel and our team will respond promptly.</p>
+          <div class="contact-details">
+            <div class="contact-detail"><div class="contact-detail-icon">📍</div><div><h5>Office Address</h5><p>123 Warehouse Blvd, Logistics City, LC 45678</p></div></div>
+            <div class="contact-detail"><div class="contact-detail-icon">📞</div><div><h5>Phone</h5><p>+1 (123) 456-7890</p></div></div>
+            <div class="contact-detail"><div class="contact-detail-icon">✉️</div><div><h5>Email</h5><p>info@swiftlogistics.com</p></div></div>
+            <div class="contact-detail"><div class="contact-detail-icon">🕐</div><div><h5>Working Hours</h5><p>Monday - Friday: 9:00AM - 6:00PM</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Prefer to Talk Directly?</h2>
+        <p>Call us anytime during business hours for immediate assistance.</p>
+        <div class="cta-buttons"><a href="tel:+1234567890" class="btn btn-primary">Call (123) 456-7890</a><a href="services.html" class="btn btn-outline-light">View Services</a></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><h3>SLS</h3><p>Swift Logistics Solutions - your trusted partner since 2010.</p></div><div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Freight</a></li><li><a href="services.html">Warehousing</a></li><li><a href="services.html">Supply Chain</a></li><li><a href="services.html">Customs</a></li></ul></div><div><h4>Contact</h4><ul class="footer-contact"><li><span class="contact-icon">📍</span><span>123 Warehouse Blvd, LC 45678</span></li><li><span class="contact-icon">📞</span><span>(123) 456-7890</span></li><li><span class="contact-icon">✉️</span><span>info@swiftlogistics.com</span></li></ul></div></div><div class="footer-bottom"><p>© 2025 Swift Logistics Solutions.</p><div class="footer-socials"><a href="#">in</a><a href="#">X</a><a href="#">IG</a><a href="#">in</a></div></div></div></footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="./javascript/main.js"></script>
 </body>
 </html>
