@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx'
 
 // Apply saved theme on load
-const savedTheme = localStorage.getItem('theme') || 'light'
+const savedTheme = localStorage.getItem('theme') || 'dark'
 if (savedTheme === 'dark') {
   document.documentElement.classList.add('dark')
 }
